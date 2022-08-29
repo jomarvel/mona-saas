@@ -382,6 +382,7 @@ resource turnApiApp 'Microsoft.Web/sites@2021-03-01' = {
 // to fail. For that reason, we wait an additional 2 minutes following [apiApp] deployment
 // to deploy the [webApp] giving the eventually consistent operation time to complete before
 // we try to reference the function keys.
+//we fixed weird ARM issue. answer from stackoverflow
 
 // This appears to work fine and was inspired by this Microsoft escalation engineer tecnical community article -- 
 // https://techcommunity.microsoft.com/t5/azure-database-support-blog/add-wait-operation-to-arm-template-deployment/ba-p/2915342
